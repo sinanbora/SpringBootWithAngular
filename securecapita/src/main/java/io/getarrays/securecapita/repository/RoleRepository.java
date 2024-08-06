@@ -16,7 +16,7 @@ public interface RoleRepository<T extends Role> {
 
     void addRoleToUser(Long userId, String roleName);
     Role getRoleByUserId(Long userId);
-    Role getRoleByEmail(String email);
+    Role getRoleByEmail(String email); //email must be unique
     void updateUserRole(Long userId, String roleName);
 
 }
